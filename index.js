@@ -127,6 +127,18 @@ async function run() {
 
 
 
+    app.get('/seller/orders', async (req, res) => {
+      const cursor = NewcreateCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+
+    })
+
+
+
+
+
+
 
 
 
